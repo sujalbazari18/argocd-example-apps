@@ -17,4 +17,4 @@ spec:
         - image: ghcr.io/shubsi26/javaapp:latest
           name: guestbook-ui
           ports:
-            - containerPort: 80
+            - containerPort: 8080
