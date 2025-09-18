@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: guestbook-ui
 spec:
-  type: LoadBalancer   # 👈 Changed from default ClusterIP to LoadBalancer
+  type: ClusterIP  # 👈 Changed from default ClusterIP to LoadBalancer
   selector:
     app: guestbook-ui
   ports:
     - port: 80         # Service port
       targetPort: 8080   # Container port (inside Pod)
+      nodePort: 30080
