@@ -9,4 +9,3 @@ spec:
   ports:
     - port: 80         # Service port
       targetPort: 8080   # Container port (inside Pod)
-      nodePort: 30080
